@@ -1,0 +1,123 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Review</title>
+    <link rel="icon" href="Imagens/logo.png">
+</head>
+<body>
+    <div class="main">
+
+        <div class="header">
+            <img class="headerimg" src="Imagens/logo.png">
+            <a href="homepage.html">
+                <h1>GameJudge</h1>
+            </a>
+            <div class="search-wrapper">
+                <img class="lupa" src="Imagens/lupa.png">
+                <input type="text" placeholder="Pesquisa">
+            </div>
+        </div>
+
+        <div class="left">
+            <a href="Review.html">
+                <button class="botoes">
+                    <h2>Add Revisão</h2>
+                    <img class="icons" src="Imagens/review.png">
+                </button>
+            </a>
+            <button class="botoes">
+                <h2>Sua Lista</h2>
+                <img class="icons" src="Imagens/list.png">
+            </button>
+            <button class="botoes">
+                <h2>Top Músicas/Jogos</h2>
+                <img class="icons" src="Imagens/top.png">
+            </button>
+            <button class="botoes">
+                <h2>Noticias</h2>
+                <img class="icons" src="Imagens/news.png">
+            </button>
+            <button class="botoes">
+                <h2>Adicionar</h2>
+                <img class="icons" src="Imagens/plus.png">
+            </button>
+            <button class="botoes">
+                <h2>Perfil</h2>
+                <img class="icons" src="Imagens/user.png">
+            </button>
+        </div>
+
+        <div class="cardregister">
+            <h1>Insira sua review!</h1>
+            <form action="#">
+                <div class="textfield">
+                    <label for="usuario">Nome de Exibição</label>
+                    <input type="text" id="usuario" placeholder="Nome" required>
+                </div>
+                <div class="textfield">
+                    <label for="nota">Nota (01-10)</label>
+                    <input type="range" list="tickmarks" id="nota" name="nota" value="1" min="1" max="10" step="1">
+                    <datalist id="tickmarks">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5" label="50%"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10" label="100%"></option>
+                    </datalist>
+                </div>
+                <div class="textfield">
+                    <label for="data">Quando você jogou esse game?</label>
+                    <input type="date" id="data" name="data" min="1979-12-31" max="2024-11-19" required>
+                </div>
+                <div class="textfield">
+                    <label for="gamename">Jogo</label>
+                </div>
+                <div class="textfield">
+                    <label for="game1">
+                        Red Dead Redemption 2
+                        <input type="radio" class="choose" id="game1" name="game" required>
+                    </label>
+                </div>
+                <div class="textfield">
+                    <label for="game2">
+                        Spiritfarer
+                        <input type="radio" class="choose" id="game2" name="game" required>
+                    </label>
+                </div>
+                <div class="textfield">
+                    <label for="game3">
+                        Minecraft
+                        <input type="radio" class="choose" id="game3" name="game" required>
+                    </label>
+                </div>
+                <div class="textfield">
+                    <label for="gametime">
+                        Tempo de Jogo
+                        <input type="number" id="gametime" name="gametime" required placeholder="Tempo">
+                    </label>
+                </div>
+                <div class="textfield">
+                    <label for="soundtrack">
+                        Melhor trilha sonora
+                        <input type="text" id="soundtrack" name="soundtrack" placeholder="Música">
+                    </label>
+                </div>
+                <div class="textfield">
+                    <label for="review">Review</label>
+                    <textarea class="desc" id="review" name="review" rows="10" cols="30" required></textarea>
+                </div>
+				 <div class="textfield">
+                <button class="btnlogin" type="submit">
+                    <h2>Postar</h2>
+                </button>
+				<div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

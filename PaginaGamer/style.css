@@ -1,0 +1,429 @@
+body {
+    /* Estiliza o corpo da página */
+    height: 100vh; /* Altura ocupa 100% da viewport */
+    width: 100vw; /* Largura ocupa 100% da viewport */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+    margin: 0; /* Remove margens padrão */
+    color: #283044; /* Cor do texto principal */
+    overflow-x: hidden; /* Remove rolagem horizontal */
+
+    /* Configura imagem de fundo */
+    background-image: url("Imagens/FundoPag.AVIF");
+    background-repeat: no-repeat; /* Evita repetição */
+    background-size: 100% 100%; /* Ajusta imagem ao tamanho da tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Fixa a imagem ao rolar */
+    background-position-x: center; /* Centraliza horizontalmente */
+    background-position-y: center; /* Centraliza verticalmente */
+}
+
+.main {
+    /* Estiliza a seção principal */
+    width: 100vw; /* Largura total da viewport */
+    height: 100vh; /* Altura total da viewport */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    font-family: Garamond; /* Define fonte do texto */
+
+    /* Configuração de fundo semelhante ao body */
+    background-image: url("Imagens/FundoPag.AVIF");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+/* CONFIGURAÇÃO DO CABEÇALHO */
+
+.header {
+    
+    display: flex; /* Organiza elementos em linha */
+    justify-content: space-between; /* Espaça itens igualmente */
+    align-items: center; /* Centraliza itens verticalmente */
+    width: 100vw; /* Largura total da viewport */
+    height: 3.75vh; /* Altura de 5% da viewport */
+    padding: 3.75px; /* Espaçamento interno */
+    font-size: 15px; /* Tamanho do texto */
+    font-weight: 800; /* Define texto em negrito */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+    top: 0; /* Posiciona no topo */
+    z-index: 1; /* Garante que fique sobre outros elementos */
+    overflow: hidden; /* Oculta elementos que excedem o limite */
+
+    /* Fundo do cabeçalho */
+    background-image: url("Imagens/HeaderFundo.JPG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.header .headerimg {
+    /* Estiliza imagem do cabeçalho (ex.: logotipo) */
+    height: 120%; /* Proporção da altura */
+    width: auto; /* Mantém proporções */
+    max-width: 75px; /* Define largura máxima */
+    object-fit: contain; /* Ajusta imagem ao espaço disponível */
+}
+
+.header input {
+    /* Estilo do campo de busca */
+    color: black; /* Cor do texto */
+    padding: 5.25px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 337.5px; /* Largura do campo */
+    padding-right: 30px; /* Espaço extra para ícone */
+    border: 2px solid #ccc; /* Adiciona borda */
+    border-color: white; /* Cor específica da borda */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+}
+
+.lupa {
+    /* Ícone de lupa dentro do campo de busca */
+    position: absolute; /* Posiciona ícone relativo ao campo */
+    right: 10px; /* Alinha à direita */
+    max-height: 41.25px; /* Define altura máxima */
+}
+
+.header h1 {
+    /* Título principal no cabeçalho */
+    font-size: 30.5px; /* Tamanho do texto */
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Oculta excesso de texto */
+    text-overflow: ellipsis; /* Adiciona "..." se texto exceder o limite */
+    margin: 7.5px; /* Espaçamento ao redor do texto */
+    letter-spacing: 1.5px; /* Espaçamento entre letras */
+}
+
+.search-wrapper {
+    /* Estiliza container do campo de busca */
+    position: relative; /* Permite posicionar ícones no campo */
+    display: flex; /* Coloca input e lupa lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    flex-grow: 1; /* Expande o campo conforme necessário */
+    max-width: 350px; /* Define largura máxima */
+    margin-left: auto; /* Empurra o campo para a direita */
+}
+/*  CONFIGURAÇÃO DA DIV QUE FICA NA DIREITA  */
+.right {
+   
+    width: 80vw; /* Largura de 80% da viewport */
+    height: 100%; /* Altura total */
+    display: table; /* Estilo baseado em tabela */
+    float: right; /* Posiciona o elemento à direita */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinha texto no centro */
+    padding: 22.5px; /* Espaçamento interno */
+
+    /* Fundo da área direita */
+    background-image: url("Imagens/FundoPag.AVIF");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+}
+/*  CONFIGURAÇÃO DA DIV QUE FICA NA ESQUERDA  */
+.left {
+   
+    margin-top: 52.5px; /* Distância do topo */
+    width: 12.75vw; /* Largura de 17% da viewport */
+    height: 100%; /* Altura total */
+    display: table; /* Estilo baseado em tabela */
+    float: left; /* Posiciona o elemento à esquerda */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinha texto no centro */
+    margin-left: 75px; /* Espaçamento à esquerda */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+    position: fixed; /* Mantém fixo ao rolar */
+    top: 0; /* Posiciona no topo */
+    z-index: 1; /* Garante sobreposição */
+
+    /* Fundo da área esquerda */
+    background-image: url("Imagens/FundoPag.AVIF");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.icons {
+    /* Configuração de ícones */
+	
+    padding: 0px 52.5px; /* Espaçamento ao redor */
+    max-height: 33.75px; /* Define altura máxima */
+}
+
+
+
+/*  Imagens do Jogo na página inicial  */
+.game {
+    /* Configuração do container dos jogos */
+    display: inline-block; /* Organiza elementos em linha */
+    width: 90%; /* Largura do container */
+    padding: 5px; /* Espaçamento interno */
+}
+
+.game a {
+    /* Links dos jogos */
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: black; /* Define cor padrão do texto */
+}
+
+.game a:hover {
+    /* Efeito hover para links */
+    text-decoration: none; /* Mantém sem sublinhado */
+    color: white; /* Altera cor ao passar o mouse */
+    cursor: pointer; /* Mostra ícone de clique */
+}
+
+.gamephoto {
+    /* Configuração das imagens dos jogos */
+    height: 234px; /* Altura da imagem */
+    width: 217.5px; /* Largura da imagem */
+	
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    margin-left: 5px; /* Espaçamento abaixo da imagem */
+    border-radius: 22.5px; /* Bordas arredondadas */
+}
+
+/* PAGINA DO JOGO */
+.leftgame {
+    /* Área esquerda da página do jogo */
+    width: 17vw; /* Largura de 17% da viewport */
+    height: 100%; /* Altura total */
+    display: table; /* Estilo baseado em tabela */
+    float: left; /* Posiciona à esquerda */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Texto alinhado ao centro */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+    position: fixed; /* Fixa posição ao rolar */
+    top: 0; /* Posiciona no topo */
+    z-index: 1; /* Garante sobreposição */
+	margin-top:35px; /* Espaço acima */
+	
+    /* Fundo da área esquerda */
+    background-image: url("Imagens/FundoPag.AVIF");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+
+    overflow: auto; /* Adiciona rolagem se necessário */
+    position: relative; /* Ajusta contexto de posicionamento */
+}
+
+.leftgame .capa {
+    /* Imagem de capa do jogo */
+    height: 26.25vh; /* Altura de 35% da viewport */
+    width: 9vw; /* Largura de 12% da viewport */
+}
+
+.rightgame {
+    /* Área direita da página do jogo */
+    width: 80vw; /* Largura de 80% da viewport */
+    height: 100%; /* Altura total */
+    display: table; /* Estilo baseado em tabela */
+    float: right; /* Posiciona à direita */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Texto alinhado ao centro */
+    padding: 22.5px; /* Espaçamento interno */
+
+    /* Fundo da área direita */
+    background-image: url("Imagens/fundo.JPG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-position-x: fixed;
+    background-position-y: fixed;
+}
+
+.descricao {
+    /* Configuração da descrição */
+    text-align: center; /* Centraliza texto */
+}
+
+.botoes .botaobugado {
+    /* Configuração de botões (classe bugada) */
+    justify-content: center; /* Centraliza botões horizontalmente */
+    align-items: center; /* Centraliza botões verticalmente */
+    margin-left: 100px; /* Espaço à esquerda */
+    display: table; /* Estilo baseado em tabela */
+    float: left; /* Posiciona à esquerda */
+    text-align: center; /* Texto alinhado ao centro */
+	font-size:20px;
+}
+
+.iconsbugado{
+	margin-left:100px;
+	margin-bottom:30px;
+	padding: 0px 52.5px; /* Espaçamento ao redor */
+    max-height: 35.75px; /* Define altura máxima */
+}
+
+/* PAGINA DE REVIEW */
+.cardregister {
+    /* Configuração do formulário de registro */
+    width: 100%; /* Largura de 80% */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Elementos em coluna */
+    margin: auto; /* Centraliza na página */
+    overflow: hidden; /* Oculta conteúdo excedente */
+}
+
+.textfield {
+    /* Configuração dos campos de entrada */
+    width: 100%; /* Largura total */
+    display: table; /* Estilo baseado em tabela */
+    flex-direction: column; /* Elementos em coluna */
+    margin: 7,5px 0px; /* Espaçamento vertical */
+}
+
+.textfield input {
+    /* Estilo dos inputs */
+    width: 100%; /* Largura total */
+    border-color: white; /* Cor da borda */
+    border-radius: 7.5px; /* Bordas arredondadas */
+    padding: 11.25px; /* Espaçamento interno */
+    color: #000000; /* Cor do texto */
+    font-size: 10.5pt; /* Tamanho do texto */
+    outline: none; /* Remove borda padrão */
+}
+
+.textfield input::placeholder {
+    /* Estilo do texto de placeholder */
+    color: #000000; /* Cor do placeholder */
+    position: top; /* Alinha ao topo */
+}
+
+.textfield .choose {
+    /* Configuração para campos de seleção */
+    width: 15px; /* Largura fixa */
+    border-color: white; /* Cor da borda */
+    border-radius: 7.5px; /* Bordas arredondadas */
+    padding: 11.25px; /* Espaçamento interno */
+    color: #000000; /* Cor do texto */
+    font-size: 10.5pt; /* Tamanho do texto */
+    outline: none; /* Remove borda padrão */
+}
+
+.textfield label {
+    /* Configuração de rótulos */
+    font-size: 13.5pt; /* Tamanho do texto */
+    color: #000000; /* Cor do texto */
+}
+
+.desc {
+    /* Campo de descrição */
+    min-height: 150px; /* Altura mínima */
+    max-height: 400px; /* Altura máxima */
+    min-width: 100%; /* Largura mínima */
+    max-width: 100%; /* Largura máxima */
+    resize: none; /* Remove opção de redimensionar */
+}
+
+.btnlogin {
+    /* Estilo para botão de login */
+    margin-left: 93.75px; /* Espaçamento à esquerda */
+}
+
+.iconsm {
+    /* Configuração de ícones grandes */
+    padding: 45px 52.5px; /* Espaçamento ao redor */
+    max-height: 75px; /* Altura máxima */
+}
+
+ol {
+    /* Configuração para listas ordenadas */
+    list-style-type: circle; /* Formato de marcador */
+    font-size: 20px; /* Tamanho do texto */
+    overflow: hidden; /* Oculta excesso */
+    display: block; /* Exibe como bloco */
+}
+
+h1 {
+    /* Estilo de títulos h1 */
+    font-size: 45px; /* Tamanho do texto */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    font-weight: bold; /* Negrito */
+    font-family: Papyrus; /* Fonte personalizada */
+}
+
+input::placeholder {
+    /* Estilo geral de placeholders */
+    font-family: Courier New; /* Fonte personalizada */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 15px; /* Tamanho do texto */
+}
+
+a {
+    /* Estilo padrão para links */
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+a::visited {
+    /* Estilo para links visitados */
+    color: none; /* Sem cor adicional */
+}
+
+button {
+    /* Configuração geral de botões */
+    display: table; /* Estilo baseado em tabela */
+    align-items: center; /* Centraliza verticalmente */
+    height: 6.75vh; /* Altura de 9% da viewport */
+    padding: 3,75px; /* Espaçamento interno */
+    font-size: 15px; /* Tamanho do texto */
+    font-weight: 800; /* Negrito */
+    box-sizing: border-box; /* Inclui padding no tamanho */
+    margin-bottom: 70px; /* Espaço acima */
+    margin-top: 30px; /* Espaço acima */
+	
+    background: none; /* Sem fundo padrão */
+    width: 187.5px; /* Largura fixa */
+    padding: 9px 0px; /* Espaçamento interno vertical */
+    border: none; /* Remove bordas */
+    border-radius: 6px; /* Bordas arredondadas */
+    outline: none; /* Remove borda padrão */
+    font-weight: bold; /* Negrito */
+    letter-spacing: 3px; /* Espaçamento entre letras */
+    cursor: pointer; /* Ícone de clique */
+    font-family: Lucida Handwriting; /* Fonte personalizada */
+}
+
+button:hover {
+    /* Estilo para botões ao passar o mouse */
+    animation-duration: 0.5; /* Duração da animação */
+    animation-iteration-count: infinite; /* Repetição contínua */
+    color: #FFFFFF; /* Cor do texto */
+}
+
+iframe {
+    /* Configuração para iframes */
+    top: 0; /* Posicionado no topo */
+    bottom: 0; /* Posicionado no fundo */
+    left: 0; /* Posicionado à esquerda */
+	height: 80%; /* Altura total */
+    width: 80%; /* Largura fixa */
+
+
+}
+
+
