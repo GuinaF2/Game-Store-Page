@@ -1,5 +1,10 @@
 ## Game Store Page
 
+🌐 Live Demo
+View the live site here:
+
+https://guinaf2.github.io/Game-Store-Page/
+
 ## Project Description
 The Game Store Page showcases a selection of games with accompanying images, descriptions, and pricing information. The layout is structured to provide a user-friendly browsing experience, mimicking the look and feel of a real online game store.​
 
